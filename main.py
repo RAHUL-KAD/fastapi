@@ -32,7 +32,7 @@ class Blog(BaseModel):
 
 @app.post('/blog')
 def create_blog(blog: Blog):
-    return {'Blog details':{f'tilte of blog is {blog.title}\n', f'Body of the blog contains: {blog.body}\n', f'Name of the blog is: {blog.name}\n', f'is my blog published: {blog.published}'}}
+    return {'Blog details':{f'tilte of blog is: {blog.title}\n', f'Body of the blog contains: {blog.body}\n', f'Name of the blog is: {blog.name}\n', f'is my blog published: {blog.published}'}}
 
 
 if __name__ == "__main__":
